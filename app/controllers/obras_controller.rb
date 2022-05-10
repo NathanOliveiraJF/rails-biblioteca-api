@@ -46,6 +46,6 @@ class ObrasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def obra_params
-      params.require(:obra).permit(:titulo, :editora, :foto)
+      params.require(:obra).permit(:titulo, :editora, :foto, :actor_id)
     end
 end
